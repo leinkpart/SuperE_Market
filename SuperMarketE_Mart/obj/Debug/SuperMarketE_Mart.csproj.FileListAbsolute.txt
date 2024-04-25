@@ -1,0 +1,15 @@
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\bin\Debug\SuperMarketE_Mart.exe.config
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\bin\Debug\SuperMarketE_Mart.exe
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\bin\Debug\SuperMarketE_Mart.pdb
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.csproj.AssemblyReference.cache
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.Properties.Resources.resources
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.csproj.GenerateResource.cache
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.csproj.CoreCompileInputs.cache
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.exe
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.pdb
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\bin\Debug\E_Market.mdf
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\bin\Debug\E_Market_log.ldf
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.Login.resources
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.MainForm.resources
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.QL_Hang.resources
+C:\Users\NGUYEN LINH\Documents\Học Tập\Bài tập C#\SuperMarketE_Mart\SuperMarketE_Mart\obj\Debug\SuperMarketE_Mart.QL_NhaCC.resources
