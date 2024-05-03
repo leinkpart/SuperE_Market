@@ -51,7 +51,6 @@ namespace SuperMarketE_Mart
                     //Lấy tên hiển thị của tài khoản đăng nhập vào.
                     string query = "SELECT DisplayName FROM ACCOUNT WHERE Username = @User";
                     SqlCommand sqlcommand = new SqlCommand(query, connection);
-
                     sqlcommand.Parameters.AddWithValue("@User", username);
 
                     string displayname = sqlcommand.ExecuteScalar().ToString();
@@ -59,47 +58,75 @@ namespace SuperMarketE_Mart
                     //Lấy vai trò của tài khoản đăng nhập vào.
                     query = "SELECT VaiTro FROM ACCOUNT WHERE Username = @User";
                     sqlcommand = new SqlCommand(query, connection);
-
                     sqlcommand.Parameters.AddWithValue("@User", username);
 
-                    
                     string vaitro = sqlcommand.ExecuteScalar().ToString();
+
+                    //Lấy ID của tài khoản đăng nhập vào.
+                    query = "SELECT ID FROM ACCOUNT WHERE Username = @User";
+                    sqlcommand = new SqlCommand(query, connection);
+                    sqlcommand.Parameters.AddWithValue("@User", username);
+
+                    string maNV = sqlcommand.ExecuteScalar().ToString();
+
+                    //Lấy Email của tài khoản đăng nhập vào.
+                    query = "SELECT Email FROM ACCOUNT WHERE Username = @User";
+                    sqlcommand = new SqlCommand(query, connection);
+                    sqlcommand.Parameters.AddWithValue("@User", username);
+
+                    string email = sqlcommand.ExecuteScalar().ToString();
+
+                    //Lấy SDT của tài khoản đăng nhập vào.
+                    query = "SELECT PhoneNum FROM ACCOUNT WHERE Username = @User";
+                    sqlcommand = new SqlCommand(query, connection);
+                    sqlcommand.Parameters.AddWithValue("@User", username);
+
+                    string soDT = sqlcommand.ExecuteScalar().ToString();
+
+                    //Lấy Ngay vao lam của tài khoản đăng nhập vào.
+                    query = "SELECT JoinDate FROM ACCOUNT WHERE Username = @User";
+                    sqlcommand = new SqlCommand(query, connection);
+                    sqlcommand.Parameters.AddWithValue("@User", username);
+
+                    string joindate = sqlcommand.ExecuteScalar().ToString();
 
                     this.Close();
 
                     MainForm mainForm = (MainForm)Application.OpenForms["MainForm"];
                     if (mainForm != null)
                     {
-                        mainForm.DisplayUserInfo(displayname, vaitro);
+                        mainForm.DisplayUserInfo(displayname, vaitro, maNV, email, soDT, joindate);
                         mainForm.Show();
 
                     }
-                    else
-                    {
-                        loginAttempts++;
-
-                        if (textuser.Text.Length == 0 && textpass.Text.Length == 0)
-                        {
-                            MessageBox.Show("Please Enter the field.");
-                        }
-                        else if (loginAttempts == 1 || loginAttempts == 2)
-                        {
-                            MessageBox.Show("Sai mật khẩu/tên người dùng");
-                        }
-
-                        if (loginAttempts == 4 || loginAttempts == 3)
-                        {
-                            MessageBox.Show("Bạn đã nhập sai mật khẩu/tên người dùng " + loginAttempts + " lần. Lưu ý: Còn " + (MAX_LOGIN_ATTEMPTS - loginAttempts) + " lần thử!");
-                        }
-
-                        if (loginAttempts == MAX_LOGIN_ATTEMPTS)
-                        {
-                            MessageBox.Show("Bạn đã nhập sai mật khẩu/tên người dùng " + MAX_LOGIN_ATTEMPTS + " lần. From này sẽ tự đóng.");
-                            Application.Exit();
-                        }
-                    }
-                    connection.Close();
                 }
+                else
+                {
+                    loginAttempts++;
+
+                    if (textuser.Text.Length == 0 && textpass.Text.Length == 0)
+                    {
+                        MessageBox.Show("Please Enter the field.");
+                    }
+                    else if (loginAttempts == 1 || loginAttempts == 2)
+                    {
+                        MessageBox.Show("Sai mật khẩu/tên người dùng");
+                    }
+
+                    if (loginAttempts == 4 || loginAttempts == 3)
+                    {
+                        MessageBox.Show("Bạn đã nhập sai mật khẩu/tên người dùng " + loginAttempts + " lần. Lưu ý: Còn " + (MAX_LOGIN_ATTEMPTS - loginAttempts) + " lần thử!");
+                    }
+
+                    if (loginAttempts == MAX_LOGIN_ATTEMPTS)
+                    {
+                        MessageBox.Show("Bạn đã nhập sai mật khẩu/tên người dùng " + MAX_LOGIN_ATTEMPTS + " lần. From này sẽ tự đóng.");
+                        Application.Exit();
+                    }
+                }
+             
+                connection.Close();
+                
             }
         }
 

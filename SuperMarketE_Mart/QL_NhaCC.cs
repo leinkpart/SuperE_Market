@@ -22,7 +22,41 @@ namespace SuperMarketE_Mart
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                string keyword = txtSearch.Text.Trim().ToLower();
 
+                if (keyword == "")
+                {
+                    QL_NhaCC_Load(sender, e);
+                }
+
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    if (conn.State == ConnectionState.Closed)
+                        conn.Open();
+
+                    string query = "SELECT * FROM TB_NhaCungCap WHERE TenNCC LIKE '%" + keyword + "%'";
+                    SqlCommand command = new SqlCommand(query, conn);
+
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+
+                    adapter.Fill(dataTable);
+
+                    dtgvSupplier.DataSource = dataTable;
+
+
+                    if (conn.State == ConnectionState.Open)
+                        conn.Close();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi " + ex.Message);
+            }
         }
 
         private void QL_NhaCC_Load(object sender, EventArgs e)
@@ -40,6 +74,12 @@ namespace SuperMarketE_Mart
                     DataTable dataTable = new DataTable();
                     dataTable.Load(reader);
                     dtgvSupplier.DataSource = dataTable;
+                    dtgvSupplier.Columns[0].HeaderText = "Supplier ID";
+                    dtgvSupplier.Columns[1].HeaderText = "Supplier Name";
+                    dtgvSupplier.Columns[2].HeaderText = "Address";
+                    dtgvSupplier.Columns[3].HeaderText = "Phone Number";
+                    dtgvSupplier.Columns[4].HeaderText = "Provide Goods";
+                    dtgvSupplier.Columns[5].HeaderText = "Category Goods";
 
                     if (connection.State == ConnectionState.Open)
                         connection.Close();
@@ -134,6 +174,12 @@ namespace SuperMarketE_Mart
         {
             try
             {
+                if (txtSupplierID.Text == "" && txtSupplierName.Text == "" && txtAddress.Text == "" && txtPhoneNumb.Text == "" && txtSupplyGoods.Text == "")
+                {
+                    MessageBox.Show("Please choose one data to Edit", "Information", MessageBoxButtons.OK);
+                    return;
+                }
+
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     if (conn.State == ConnectionState.Closed)
@@ -172,6 +218,12 @@ namespace SuperMarketE_Mart
         {
             try
             {
+                if (txtSupplierID.Text == "" && txtSupplierName.Text == "" && txtAddress.Text == "" && txtPhoneNumb.Text == "" && txtSupplyGoods.Text == "")
+                {
+                    MessageBox.Show("Please choose one data to Delete", "Information", MessageBoxButtons.OK);
+                    return;
+                }
+
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     if (conn.State == ConnectionState.Closed)
@@ -188,7 +240,7 @@ namespace SuperMarketE_Mart
 
                     QL_NhaCC_Load(sender, e);
 
-                    MessageBox.Show("Added Successfully");
+                    MessageBox.Show("Deleted Successfully");
                 }
             }
             catch (Exception ex)
@@ -213,6 +265,7 @@ namespace SuperMarketE_Mart
                 txtSupplyGoods.Text = dataGridView.Cells["HangCungCap"].Value.ToString();
                 cbG_Categorry.Text = dataGridView.Cells["DanhMucSP"].Value.ToString();
             }
+            btnAdd.Enabled = false;
         }
 
 
@@ -243,6 +296,8 @@ namespace SuperMarketE_Mart
             txtPhoneNumb.Text = string.Empty;
             txtSupplyGoods.Text = string.Empty;
             cbG_Categorry.Text = string.Empty;
+
+            btnAdd.Enabled = true;
         }
     }
 }

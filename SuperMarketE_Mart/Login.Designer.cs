@@ -89,7 +89,7 @@
             this.textpass.PasswordChar = '*';
             this.textpass.Size = new System.Drawing.Size(148, 29);
             this.textpass.TabIndex = 4;
-            this.textpass.Text = "linh7104";
+            this.textpass.Text = "Linh2004";
             // 
             // btnLogin
             // 

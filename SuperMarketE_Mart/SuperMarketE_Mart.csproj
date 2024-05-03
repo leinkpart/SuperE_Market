@@ -74,6 +74,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhapHangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapHangForm.Designer.cs">
+      <DependentUpon>NhapHangForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="QL_Hang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +94,20 @@
     <Compile Include="QL_NhaCC.Designer.cs">
       <DependentUpon>QL_NhaCC.cs</DependentUpon>
     </Compile>
+    <Compile Include="XuatHangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatHangForm.Designer.cs">
+      <DependentUpon>XuatHangForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapHangForm.resx">
+      <DependentUpon>NhapHangForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QL_Hang.resx">
       <DependentUpon>QL_Hang.cs</DependentUpon>
@@ -105,9 +120,13 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QL_NhaCC.resx">
       <DependentUpon>QL_NhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatHangForm.resx">
+      <DependentUpon>XuatHangForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,15 +140,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="E_Market.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="E_Market_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>E_Market.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

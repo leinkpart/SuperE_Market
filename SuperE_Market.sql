@@ -19,20 +19,21 @@ GO
 CREATE TABLE Products (
     IdSanPham INT PRIMARY KEY IDENTITY,
     TenSanPham NVARCHAR(50) NOT NULL,
-    GiaTien  MONEY,
+    GiaNhapVao  DECIMAL(18,0),
     SoLuong INT NOT NULL,
-    NhaSX NVARCHAR(50),
+    IdNhaSX NVARCHAR(50),
     NgaySX DATE,
-    DanhMucSP NVARCHAR(20),
+    IdDanhMucSP VARCHAR(10),
+	GiaBanRa DECIMAL(18,0)
 );
-GO 
+GO
+
 
 CREATE TABLE TB_NhaCungCap (
 	IdNCC VARCHAR(20) PRIMARY KEY,
 	TenNCC NVARCHAR(25),
 	DiaChi NVARCHAR(40),
 	DienThoai INT, 
-	HangCungCap NVARCHAR(25)
 );
 GO
 
@@ -41,8 +42,17 @@ CREATE TABLE NhapHang(
     IdSanPham INT,
     SoLuongNhap INT,
 	NhaCC VARCHAR(20),
-	DanhMucSP NVARCHAR(20),
+	IdDanhMucSP VARCHAR(10),
     NgayNhap DATE,
+	IdNguoiNhap varchar(15)
+);
+GO
+
+CREATE TABLE CT_NhapHang
+(
+	IdSanPam INT PRIMARY KEY,
+	IdNhapHang VARCHAR(15),
+	SoLuong INT,
 );
 GO
 
@@ -50,11 +60,44 @@ CREATE TABLE XuatHang (
 	IdXuatHang VARCHAR(15) PRIMARY KEY,
     IdSanPham INT,
     SoLuongXuat INT,
-	DanhMucSP NVARCHAR(20),
+	IdDanhMucSP VARCHAR(10),
     NgayNhap DATE,
-	NguoiXuat VARCHAR(15)
+	IdNguoiXuat VARCHAR(15)
 );
 GO
+
+CREATE TABLE CT_XuatHang
+(
+	IdSanPam INT PRIMARY KEY,
+	IdXuatHang VARCHAR(15),
+	SoLuong INT,
+);
+GO
+
+CREATE TABLE TB_DanhMucSP
+(
+	IdDanhMuc varchar(10) PRIMARY KEY,
+	TenDanhMuc nvarchar(30)
+);
+GO
+
+SELECT 
+    pro.IdSanPham,
+    pro.TenSanPham,
+    pro.SoLuong,
+    pro.NgaySX,
+    DM.TenDanhMuc,
+    NCC.TenNCC,
+    FORMAT(pro.GiaNhapVao, 'N0', 'vi-VN') AS GiaNhapVao,
+    FORMAT(pro.GiaBanRa, 'N0', 'vi-VN') AS GiaBanRa
+FROM 
+    Products pro
+JOIN 
+    TB_DanhMucSP DM ON pro.IdDanhMucSP = DM.IdDanhMuc
+JOIN 
+    TB_NhaCungCap NCC ON pro.IdNhaSX = NCC.IdNCC;
+GO
+
 
 --Kiểm tra đăng nhập bằng Username và Password
 CREATE PROCEDURE CheckedLogin
@@ -70,6 +113,79 @@ BEGIN
         SELECT 'Invalid username or password' AS Result
 END
 GO
+
+--Pro thêm hàng hóa
+CREATE PROCEDURE AddProduct
+    @TenSanPham NVARCHAR(100),
+    @SoLuong INT,
+    @NgaySX DATE,
+    @TenDanhMuc NVARCHAR(30),
+    @TenNhaSX NVARCHAR(25),
+    @GiaNhapVao DECIMAL(18, 0),
+    @GiaBanRa DECIMAL(18, 0)
+AS
+BEGIN
+    DECLARE @IdDanhMuc varchar(10)
+    DECLARE @IdNhaSX varchar(20)
+
+    -- Lấy ID của Danh mục từ tên
+    SELECT @IdDanhMuc = IdDanhMuc FROM TB_DanhMucSP WHERE TenDanhMuc = @TenDanhMuc
+
+    -- Lấy ID của Nhà cung cấp từ tên
+    SELECT @IdNhaSX = IdNCC FROM TB_NhaCungCap WHERE TenNCC = @TenNhaSX
+
+    -- Thêm dữ liệu vào bảng HangHoa
+    INSERT INTO Products(TenSanPham, SoLuong, NgaySX, IdDanhMucSP, IdNhaSX, GiaNhapVao, GiaBanRa)
+    VALUES (@TenSanPham, @SoLuong, @NgaySX, @IdDanhMuc, @IdNhaSX, @GiaNhapVao, @GiaBanRa)
+END
+GO
+
+--Proc Update Hàng hóa
+CREATE PROCEDURE UpdateProduct
+    @IdSanPham INT,
+    @TenSanPham NVARCHAR(50),
+    @SoLuong INT,
+    @NgaySX DATE,
+    @TenDanhMuc NVARCHAR(30),
+    @TenNhaSX NVARCHAR(25),
+    @GiaNhapVao DECIMAL(18, 0),
+    @GiaBanRa DECIMAL(18, 0)
+AS
+BEGIN
+    DECLARE @IdDanhMuc Varchar(10)
+    DECLARE @IdNhaCC Varchar(20)
+
+    -- Lấy ID của Danh mục từ tên
+    SELECT @IdDanhMuc = IdDanhMuc FROM TB_DanhMucSP WHERE TenDanhMuc = @TenDanhMuc
+
+    -- Lấy ID của Nhà cung cấp từ tên
+    SELECT @IdNhaCC = IdNCC FROM TB_NhaCungCap WHERE TenNCC = @TenNhaSX
+
+    -- Cập nhật thông tin hàng hóa
+    UPDATE Products
+    SET 
+        TenSanPham = @TenSanPham,
+        SoLuong = @SoLuong,
+        NgaySX = @NgaySX,
+        IdDanhMucSP = @IdDanhMuc,
+        IdNhaSX = @IdNhaCC,
+        GiaNhapVao = @GiaNhapVao,
+        GiaBanRa = @GiaBanRa
+    WHERE
+        IdSanPham = @IdSanPham
+END
+GO
+
+
+-- Proc Xóa một một hàng hóa
+CREATE PROCEDURE DeleteGoods
+    @IdSanPham INT
+AS
+BEGIN
+    DELETE FROM Products WHERE IdSanPham = @IdSanPham;
+END
+GO
+
 
 
 

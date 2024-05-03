@@ -20,6 +20,35 @@ namespace SuperMarketE_Mart
             InitializeComponent();
         }
 
+        public DataTable getNhaSXList()
+        {
+            string getListNSX = "SELECT * FROM TB_NhaCungCap";
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(getListNSX, connectionString);
+            DataSet dataSet = new DataSet();
+            try
+            {
+                sqlDataAdapter.Fill(dataSet);
+                return dataSet.Tables[0];
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public DataTable getDanhMuc() 
+        {
+            string getDanhMuc = "SELECT * FROM TB_DanhMucSP";
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(getDanhMuc, connectionString);
+            DataSet dataSet = new DataSet();
+            try
+            {
+                sqlDataAdapter.Fill(dataSet);
+                return dataSet.Tables[0];
+            }
+            catch { return null; }
+        }
+
         private void QL_Hang_Load(object sender, EventArgs e)
         {            
             try
@@ -28,13 +57,32 @@ namespace SuperMarketE_Mart
                 {
                     if (connection.State == ConnectionState.Closed) 
                         connection.Open();
-                    string query = "SELECT * FROM Products";
+                    string query = "SELECT  pro.IdSanPham,  pro.TenSanPham,  pro.SoLuong,  pro.NgaySX,  DM.TenDanhMuc,  NCC.TenNCC,   FORMAT(pro.GiaNhapVao, 'N0', 'vi-VN') AS GiaNhapVao,   FORMAT(pro.GiaBanRa, 'N0', 'vi-VN') AS GiaBanRa   FROM   Products pro  JOIN  TB_DanhMucSP DM ON pro.IdDanhMucSP = DM.IdDanhMuc  JOIN   TB_NhaCungCap NCC ON pro.IdNhaSX = NCC.IdNCC";
                     SqlCommand cmd = new SqlCommand(query, connection);                   
 
                     SqlDataReader reader = cmd.ExecuteReader();
                     DataTable dataTable = new DataTable();
                     dataTable.Load(reader);
                     dtgvGoodsList.DataSource = dataTable;
+                    dtgvGoodsList.Columns[0].HeaderText = "Mã Sản Phẩm";
+                    dtgvGoodsList.Columns[1].HeaderText = "Tên Sản Phẩm";
+                    dtgvGoodsList.Columns[2].HeaderText = "Số Lượng";
+                    dtgvGoodsList.Columns[3].HeaderText = "Ngày Sản Xuất";
+                    dtgvGoodsList.Columns[4].HeaderText = "Danh Mục Sản Phẩm";
+                    dtgvGoodsList.Columns[5].HeaderText = "Nhà Sản Xuất";
+                    dtgvGoodsList.Columns[6].HeaderText = "Giá Nhập Vào";                   
+                    dtgvGoodsList.Columns[7].HeaderText = "Giá Bán Ra";
+
+
+                    DataTable dtTable = getNhaSXList();
+                    cmbNhaSX.DataSource = dtTable;
+                    cmbNhaSX.DisplayMember = "TenNCC";
+                    cmbNhaSX.ValueMember = "IdNCC";
+
+                    DataTable dataTB = getDanhMuc();
+                    cbDanhMuc.DataSource = dataTB;
+                    cbDanhMuc.DisplayMember = "TenDanhMuc";
+                    cbDanhMuc.ValueMember = "IdDanhMuc";
 
                     if (connection.State == ConnectionState.Open)
                         connection.Close();
@@ -54,18 +102,19 @@ namespace SuperMarketE_Mart
                 
                 txtIDSP.Text = dataGridView.Cells["IdSanPham"].Value.ToString();
                 txtTenSP.Text = dataGridView.Cells["TenSanPham"].Value.ToString();
-                txtPrice.Text = dataGridView.Cells["GiaTien"].Value.ToString();
+                txtInputPrice.Text = dataGridView.Cells["GiaNhapVao"].Value.ToString();
                 numSoLuong.Text = dataGridView.Cells["SoLuong"].Value.ToString();
-                txtNhaSX.Text = dataGridView.Cells["NhaSX"].Value.ToString();
+                cmbNhaSX.Text = dataGridView.Cells["TenNCC"].Value.ToString();
                 dtNgaySX.Text = dataGridView.Cells["NgaySX"].Value.ToString();
-                cbDanhMuc.Text = dataGridView.Cells["DanhMucSP"].Value.ToString();
-                
+                cbDanhMuc.Text = dataGridView.Cells["TenDanhMuc"].Value.ToString();
+                txtOutputPrice.Text = dataGridView.Cells["GiaBanRa"].Value.ToString();
             }
+            btnAdd.Enabled = false;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (txtTenSP.Text == "" && txtPrice.Text == "" && txtNhaSX.Text == "" && cbDanhMuc.Text == "")
+            if (txtTenSP.Text == "" && txtInputPrice.Text == "" && cmbNhaSX.Text == "" && cbDanhMuc.Text == "")
             {
                 MessageBox.Show("Please enter Information follow the Fields.", "Information", MessageBoxButtons.OK);
                 txtTenSP.Focus();
@@ -78,18 +127,18 @@ namespace SuperMarketE_Mart
                 return;
             }
 
-            if (txtPrice.Text == "")
+            if (txtInputPrice.Text == "")
             {
                 MessageBox.Show("Giá Tiền has no Information yet!!", "Information", MessageBoxButtons.OK);
-                txtPrice.Focus();
+                txtInputPrice.Focus();
                 return;
             }
 
 
-            if (txtNhaSX.Text == "")
+            if (cmbNhaSX.Text == "")
             {
                 MessageBox.Show("Nhà SX has no Information yet!!", "Information", MessageBoxButtons.OK);
-                txtNhaSX.Focus();
+                cmbNhaSX.Focus();
                 return;
             }
 
@@ -105,6 +154,7 @@ namespace SuperMarketE_Mart
             {
                 MessageBox.Show("Danh Mục has no Information yet!!", "Information", MessageBoxButtons.OK);
                 cbDanhMuc.Focus();
+                return;
             }
 
             try
@@ -114,16 +164,18 @@ namespace SuperMarketE_Mart
                     if (conn.State == ConnectionState.Closed)
                         conn.Open();
 
-                    string AddGoods = "INSERT INTO Products VALUES (@TenSanPham , @GiaTien , @SoLuong , @NhaSX , @NgaySX , @DanhMucSP )";
-                   
-                    SqlCommand command = new SqlCommand(AddGoods, conn);
+                    //Gọi thủ tục(Proc) để thêm một dữ liệu mới vào bảng
+                    SqlCommand command = new SqlCommand("AddProduct", conn);
+                    command.CommandType = CommandType.StoredProcedure;
                     
                     command.Parameters.AddWithValue("@TenSanPham", txtTenSP.Text);
-                    command.Parameters.AddWithValue("@GiaTien", txtPrice.Text);
                     command.Parameters.AddWithValue("@SoLuong", numSoLuong.Text);
-                    command.Parameters.AddWithValue("@NhaSX", txtNhaSX.Text);
                     command.Parameters.AddWithValue("@NgaySX", dtNgaySX.Value.ToString());
-                    command.Parameters.AddWithValue("@DanhMucSP", cbDanhMuc.SelectedItem);
+                    command.Parameters.AddWithValue("@TenDanhMuc", cbDanhMuc.Text);
+                    command.Parameters.AddWithValue("@TenNhaSX", cmbNhaSX.Text);
+                    command.Parameters.AddWithValue("@GiaNhapVao", txtInputPrice.Text);
+                    command.Parameters.AddWithValue("@GiaBanRa", txtOutputPrice.Text);
+                   
                     command.ExecuteNonQuery();
 
                     if (conn.State == ConnectionState.Open)
@@ -146,15 +198,23 @@ namespace SuperMarketE_Mart
         {
             txtIDSP.Text = string.Empty;
             txtTenSP.Text = string.Empty;
-            txtPrice.Text = string.Empty;
+            txtInputPrice.Text = string.Empty;
             numSoLuong.Text = "1";
-            txtNhaSX.Text = string.Empty;
+            cmbNhaSX.Text = string.Empty;
             dtNgaySX.Text = string.Empty;
             cbDanhMuc.Text = string.Empty;
+            txtOutputPrice.Text = string.Empty;
+
+            btnAdd.Enabled = true;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (txtIDSP.Text == "")
+            {
+                MessageBox.Show("Please choose one data from list to Edit", "Information", MessageBoxButtons.OK);
+                return;
+            }
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -162,17 +222,18 @@ namespace SuperMarketE_Mart
                     if (conn.State == ConnectionState.Closed)
                         conn.Open();
 
-                    string EditGoods = "UPDATE Products SET TenSanPham = @TenSanPham ,GiaTien = @GiaTien ,SoLuong = @SoLuong ,NhaSX = @NhaSX ,NgaySX = @NgaySX , DanhMucSP = @DanhMucSP WHERE IdSanPham = @IdSanPham";
-
-                    SqlCommand command = new SqlCommand(EditGoods, conn);
+                    //Gọi thủ tục để cập nhật hàng hóa sau khi sửa.
+                    SqlCommand command = new SqlCommand("UpdateProduct", conn);
+                    command.CommandType = CommandType.StoredProcedure;
 
                     command.Parameters.AddWithValue("@IdSanPham", txtIDSP.Text);
                     command.Parameters.AddWithValue("@TenSanPham", txtTenSP.Text);
-                    command.Parameters.AddWithValue("@GiaTien", txtPrice.Text);
                     command.Parameters.AddWithValue("@SoLuong", numSoLuong.Text);
-                    command.Parameters.AddWithValue("@NhaSX", txtNhaSX.Text);
                     command.Parameters.AddWithValue("@NgaySX", dtNgaySX.Value.ToString());
-                    command.Parameters.AddWithValue("@DanhMucSP", cbDanhMuc.SelectedItem);
+                    command.Parameters.AddWithValue("@TenDanhMuc", cbDanhMuc.Text);
+                    command.Parameters.AddWithValue("@TenNhaSX", cmbNhaSX.Text);
+                    command.Parameters.AddWithValue("@GiaNhapVao", txtInputPrice.Text);
+                    command.Parameters.AddWithValue("@GiaBanRa", txtOutputPrice.Text);
                     command.ExecuteNonQuery();
 
                     if (conn.State == ConnectionState.Open)
@@ -191,6 +252,11 @@ namespace SuperMarketE_Mart
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if (txtIDSP.Text == "")
+            {
+                MessageBox.Show("Please choose one data from list to Delete", "Information", MessageBoxButtons.OK);
+                return;
+            }
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -198,9 +264,12 @@ namespace SuperMarketE_Mart
                     if (conn.State == ConnectionState.Closed)
                         conn.Open();
 
-                    string DeleteGoods = "DELETE FROM Products WHERE IdSanPham = '" + txtIDSP.Text + "'";
+                    //string DeleteGoods = "DELETE FROM Products WHERE IdSanPham = '" + txtIDSP.Text + "'";
 
-                    SqlCommand command = new SqlCommand(DeleteGoods, conn);
+                    SqlCommand command = new SqlCommand("DeleteGoods", conn);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@IdSanPham", txtIDSP.Text);
 
                     command.ExecuteNonQuery();
 
