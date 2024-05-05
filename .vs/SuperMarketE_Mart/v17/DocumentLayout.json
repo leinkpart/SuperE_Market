@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|c:\\users\\nguyen linh\\documents\\h\u1ECDc t\u1EADp\\b\u00E0i t\u1EADp c#\\supermarkete_mart\\supermarkete_mart\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ctxuat.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ctxuat.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ctxuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ctxuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\xuathangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\xuathangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ctxuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ctxuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ctnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ctnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ctnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ctnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\nhaphangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\nhaphangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\xuathangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\xuathangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\nhaphangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\nhaphangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ql_nhacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ql_nhacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|c:\\users\\nguyen linh\\documents\\h\u1ECDc t\u1EADp\\b\u00E0i t\u1EADp c#\\supermarkete_mart\\supermarkete_mart\\ql_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ql_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\categoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ql_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ql_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ql_nhacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ql_nhacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\hangtonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\hangtonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,42 +63,30 @@
       "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\xuathangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\xuathangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ql_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ql_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\nhaphangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\nhaphangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ql_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ql_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\xuathangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\xuathangform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+      "AbsoluteMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\supermarkete_mart\\ql_nhacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{70EA1893-0DEA-4A8C-A022-BB4D562B16EE}|SuperMarketE_Mart\\SuperMarketE_Mart.csproj|solutionrelative:supermarkete_mart\\ql_nhacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "DockedHeight": 470,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\Login.cs",
               "RelativeDocumentMoniker": "SuperMarketE_Mart\\Login.cs",
@@ -70,11 +94,12 @@
               "RelativeToolTip": "SuperMarketE_Mart\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T15:27:07.911Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 17,
               "Title": "QL_NhaCC.cs [Design]",
               "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\QL_NhaCC.cs",
               "RelativeDocumentMoniker": "SuperMarketE_Mart\\QL_NhaCC.cs",
@@ -82,12 +107,11 @@
               "RelativeToolTip": "SuperMarketE_Mart\\QL_NhaCC.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T00:52:36.398Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "QL_Hang.cs [Design]",
               "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\QL_Hang.cs",
               "RelativeDocumentMoniker": "SuperMarketE_Mart\\QL_Hang.cs",
@@ -95,12 +119,11 @@
               "RelativeToolTip": "SuperMarketE_Mart\\QL_Hang.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T04:10:42.413Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\MainForm.cs",
               "RelativeDocumentMoniker": "SuperMarketE_Mart\\MainForm.cs",
@@ -112,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "XuatHangForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\XuatHangForm.cs",
               "RelativeDocumentMoniker": "SuperMarketE_Mart\\XuatHangForm.cs",
@@ -124,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "NhapHangForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\NhapHangForm.cs",
               "RelativeDocumentMoniker": "SuperMarketE_Mart\\NhapHangForm.cs",
@@ -135,44 +158,134 @@
               "IsPinned": true
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoryForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CategoryForm.cs",
+              "RelativeDocumentMoniker": "SuperMarketE_Mart\\CategoryForm.cs",
+              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CategoryForm.cs [Design]",
+              "RelativeToolTip": "SuperMarketE_Mart\\CategoryForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T15:36:04Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CTNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTNhap.cs",
+              "RelativeDocumentMoniker": "SuperMarketE_Mart\\CTNhap.cs",
+              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTNhap.cs [Design]",
+              "RelativeToolTip": "SuperMarketE_Mart\\CTNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:04:59.569Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CTXuat.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTXuat.cs",
+              "RelativeDocumentMoniker": "SuperMarketE_Mart\\CTXuat.cs",
+              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTXuat.cs [Design]",
+              "RelativeToolTip": "SuperMarketE_Mart\\CTXuat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:05:15.638Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HangTonKho.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\HangTonKho.cs",
+              "RelativeDocumentMoniker": "SuperMarketE_Mart\\HangTonKho.cs",
+              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\HangTonKho.cs [Design]",
+              "RelativeToolTip": "SuperMarketE_Mart\\HangTonKho.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:12:10.773Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "QL_Hang.cs",
-              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\QL_Hang.cs",
-              "RelativeDocumentMoniker": "SuperMarketE_Mart\\QL_Hang.cs",
-              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\QL_Hang.cs",
-              "RelativeToolTip": "SuperMarketE_Mart\\QL_Hang.cs",
-              "ViewState": "AQIAABcBAAAAAAAAAAAQwA8BAABQAAAA",
+              "Title": "CTXuat.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTXuat.Designer.cs",
+              "RelativeDocumentMoniker": "SuperMarketE_Mart\\CTXuat.Designer.cs",
+              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTXuat.Designer.cs",
+              "RelativeToolTip": "SuperMarketE_Mart\\CTXuat.Designer.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAWwEIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-21T02:40:58.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T11:52:52.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "CTXuat.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTXuat.cs",
+              "RelativeDocumentMoniker": "SuperMarketE_Mart\\CTXuat.cs",
+              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTXuat.cs",
+              "RelativeToolTip": "SuperMarketE_Mart\\CTXuat.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAMwDgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:39:20.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CTNhap.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTNhap.cs",
+              "RelativeDocumentMoniker": "SuperMarketE_Mart\\CTNhap.cs",
+              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\CTNhap.cs",
+              "RelativeToolTip": "SuperMarketE_Mart\\CTNhap.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAMwDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T06:39:16.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NhapHangForm.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\NhapHangForm.cs",
+              "RelativeDocumentMoniker": "SuperMarketE_Mart\\NhapHangForm.cs",
+              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\NhapHangForm.cs",
+              "RelativeToolTip": "SuperMarketE_Mart\\NhapHangForm.cs",
+              "ViewState": "AQIAADcBAAAAAAAAAAAmwEABAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T07:58:38.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "QL_NhaCC.cs",
               "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\QL_NhaCC.cs",
               "RelativeDocumentMoniker": "SuperMarketE_Mart\\QL_NhaCC.cs",
               "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\QL_NhaCC.cs",
               "RelativeToolTip": "SuperMarketE_Mart\\QL_NhaCC.cs",
-              "ViewState": "AQIAAHMAAAAAAAAAAAAwwAwBAAAJAAAA",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAYwN8AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T01:29:45.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T01:29:45.807Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
+              "Title": "QL_Hang.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\QL_Hang.cs",
+              "RelativeDocumentMoniker": "SuperMarketE_Mart\\QL_Hang.cs",
+              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\QL_Hang.cs",
+              "RelativeToolTip": "SuperMarketE_Mart\\QL_Hang.cs",
+              "ViewState": "AQIAACYBAAAAAAAAAAAAAC0BAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T02:40:58.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\MainForm.cs",
               "RelativeDocumentMoniker": "SuperMarketE_Mart\\MainForm.cs",
               "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\MainForm.cs",
               "RelativeToolTip": "SuperMarketE_Mart\\MainForm.cs",
-              "ViewState": "AQIAAMABAAAAAAAAAAAQwNABAAAuAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAqwEIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T13:14:31.51Z"
             },
@@ -184,31 +297,33 @@
               "RelativeDocumentMoniker": "SuperMarketE_Mart\\XuatHangForm.cs",
               "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\XuatHangForm.cs",
               "RelativeToolTip": "SuperMarketE_Mart\\XuatHangForm.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAApwBIAAAAAAAAA",
+              "ViewState": "AQIAAFABAAAAAAAAAAAmwF0BAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T06:21:22.649Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 81,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 49,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\Login.cs",
-              "RelativeDocumentMoniker": "SuperMarketE_Mart\\Login.cs",
-              "ToolTip": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SuperMarketE_Mart\\Login.cs",
-              "RelativeToolTip": "SuperMarketE_Mart\\Login.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAYwH4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T05:12:28.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SQLQuery1.sql ",
-              "DocumentMoniker": "C:\\Users\\NGUYEN LINH\\Documents\\H\u1ECDc T\u1EADp\\B\u00E0i t\u1EADp C#\\SuperMarketE_Mart\\SQLQuery1.sql",
-              "RelativeDocumentMoniker": "SQLQuery1.sql",
-              "ToolTip": "SQLQuery1.sql ",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-04-13T15:43:02.628Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

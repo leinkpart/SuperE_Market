@@ -21,7 +21,7 @@ namespace SuperMarketE_Mart
         public MainForm()
         {
             InitializeComponent();
-            CustomizeDesigning();
+            CustomizeSetting();
             CustomizeInfor();
             CustomizeChangePass();
         }
@@ -95,7 +95,7 @@ namespace SuperMarketE_Mart
                 currentFormchild.Close();
             }
 
-            CustomizeDesigning();
+            CustomizeSetting();
             CustomizeInfor();
             CustomizeChangePass();
         }
@@ -156,6 +156,8 @@ namespace SuperMarketE_Mart
             btnThongKe.BackColor = Color.FromArgb(20, 30, 30);
         }
 
+
+        private bool isPanelCollapse = false;
         private void btnQLHang_Click(object sender, EventArgs e)
         {
             timer1.Start();
@@ -198,7 +200,7 @@ namespace SuperMarketE_Mart
             btnThongKe.BackColor = Color.Teal;
         }
 
-        private void CustomizeDesigning()
+        private void CustomizeSetting()
         {
             pnlSetting.Visible = false;
         }
@@ -410,7 +412,7 @@ namespace SuperMarketE_Mart
         {
             if (isCollapsed)
             {
-                pnlDropdown.Height += 5;
+                pnlDropdown.Height += 15;
                 if (pnlDropdown.Size == pnlDropdown.MaximumSize)
                 {
                     timer1.Stop();
@@ -419,7 +421,7 @@ namespace SuperMarketE_Mart
             }
             else
             {
-                pnlDropdown.Height -= 5;
+                pnlDropdown.Height -= 15;
                 if (pnlDropdown.Size == pnlDropdown.MinimumSize)
                 {
                     timer1.Stop();
@@ -454,14 +456,14 @@ namespace SuperMarketE_Mart
         private void btnQLDanhMuc_Click(object sender, EventArgs e)
         {
             timer1.Start();
-
+            showChildFrom(new CategoryForm());
             lblGeneral.Text = btnQLDanhMuc.Text;
         }
 
         private void btnHangTon_Click(object sender, EventArgs e)
         {
             timer1.Start();
-
+            showChildFrom(new HangTonKho());
             lblGeneral.Text = btnHangTon.Text;
         }
     }

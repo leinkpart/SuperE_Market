@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SieuThiE_MarketDataSet1" targetNamespace="http://tempuri.org/SieuThiE_MarketDataSet1.xsd" xmlns:mstns="http://tempuri.org/SieuThiE_MarketDataSet1.xsd" xmlns="http://tempuri.org/SieuThiE_MarketDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SieuThiE_MarketConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SieuThiE_MarketConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SuperMarketE_Mart.Properties.Settings.GlobalReference.Default.SieuThiE_MarketConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NhapHangTableAdapter" GeneratorDataComponentClassName="NhapHangTableAdapter" Name="NhapHang" UserDataComponentName="NhapHangTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SieuThiE_MarketConnectionString (Settings)" DbObjectName="SieuThiE_Market.dbo.NhapHang" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdSanPham, SoLuongNhap, NgayNhap, IdTaiKhoan FROM dbo.NhapHang</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdSanPham" DataSetColumn="IdSanPham" />
+              <Mapping SourceColumn="SoLuongNhap" DataSetColumn="SoLuongNhap" />
+              <Mapping SourceColumn="NgayNhap" DataSetColumn="NgayNhap" />
+              <Mapping SourceColumn="IdTaiKhoan" DataSetColumn="IdTaiKhoan" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SieuThiE_MarketDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="SieuThiE_MarketDataSet1" msprop:Generator_DataSetName="SieuThiE_MarketDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="NhapHang" msprop:Generator_RowEvHandlerName="NhapHangRowChangeEventHandler" msprop:Generator_RowDeletedName="NhapHangRowDeleted" msprop:Generator_RowDeletingName="NhapHangRowDeleting" msprop:Generator_RowEvArgName="NhapHangRowChangeEvent" msprop:Generator_TablePropName="NhapHang" msprop:Generator_RowChangedName="NhapHangRowChanged" msprop:Generator_RowChangingName="NhapHangRowChanging" msprop:Generator_TableClassName="NhapHangDataTable" msprop:Generator_RowClassName="NhapHangRow" msprop:Generator_TableVarName="tableNhapHang" msprop:Generator_UserTableName="NhapHang">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdSanPham" msprop:Generator_ColumnPropNameInRow="IdSanPham" msprop:Generator_ColumnPropNameInTable="IdSanPhamColumn" msprop:Generator_ColumnVarNameInTable="columnIdSanPham" msprop:Generator_UserColumnName="IdSanPham" type="xs:int" minOccurs="0" />
+              <xs:element name="SoLuongNhap" msprop:Generator_ColumnPropNameInRow="SoLuongNhap" msprop:Generator_ColumnPropNameInTable="SoLuongNhapColumn" msprop:Generator_ColumnVarNameInTable="columnSoLuongNhap" msprop:Generator_UserColumnName="SoLuongNhap" type="xs:int" minOccurs="0" />
+              <xs:element name="NgayNhap" msprop:Generator_ColumnPropNameInRow="NgayNhap" msprop:Generator_ColumnPropNameInTable="NgayNhapColumn" msprop:Generator_ColumnVarNameInTable="columnNgayNhap" msprop:Generator_UserColumnName="NgayNhap" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IdTaiKhoan" msprop:Generator_ColumnPropNameInRow="IdTaiKhoan" msprop:Generator_ColumnPropNameInTable="IdTaiKhoanColumn" msprop:Generator_ColumnVarNameInTable="columnIdTaiKhoan" msprop:Generator_UserColumnName="IdTaiKhoan" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

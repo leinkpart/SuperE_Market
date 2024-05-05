@@ -86,10 +86,10 @@
             this.textpass.Location = new System.Drawing.Point(160, 176);
             this.textpass.Multiline = true;
             this.textpass.Name = "textpass";
-            this.textpass.PasswordChar = '*';
             this.textpass.Size = new System.Drawing.Size(148, 29);
             this.textpass.TabIndex = 4;
             this.textpass.Text = "Linh2004";
+            this.textpass.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 

@@ -39,6 +39,7 @@
             this.lblGeneral = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlDropdown = new System.Windows.Forms.Panel();
+            this.btnHangTon = new System.Windows.Forms.Button();
             this.btnQLDanhMuc = new System.Windows.Forms.Button();
             this.btnXuatHang = new System.Windows.Forms.Button();
             this.btnNhapHang = new System.Windows.Forms.Button();
@@ -91,7 +92,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.btnChangePass = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnHangTon = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIndividual)).BeginInit();
             this.panel2.SuspendLayout();
@@ -230,6 +230,26 @@
             this.pnlDropdown.Name = "pnlDropdown";
             this.pnlDropdown.Size = new System.Drawing.Size(251, 59);
             this.pnlDropdown.TabIndex = 3;
+            // 
+            // btnHangTon
+            // 
+            this.btnHangTon.BackColor = System.Drawing.Color.Transparent;
+            this.btnHangTon.FlatAppearance.BorderSize = 0;
+            this.btnHangTon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
+            this.btnHangTon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHangTon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHangTon.ForeColor = System.Drawing.Color.White;
+            this.btnHangTon.Image = ((System.Drawing.Image)(resources.GetObject("btnHangTon.Image")));
+            this.btnHangTon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHangTon.Location = new System.Drawing.Point(0, 242);
+            this.btnHangTon.Name = "btnHangTon";
+            this.btnHangTon.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnHangTon.Size = new System.Drawing.Size(253, 40);
+            this.btnHangTon.TabIndex = 12;
+            this.btnHangTon.Text = "       QL Hàng Tồn";
+            this.btnHangTon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHangTon.UseVisualStyleBackColor = false;
+            this.btnHangTon.Click += new System.EventHandler(this.btnHangTon_Click);
             // 
             // btnQLDanhMuc
             // 
@@ -374,7 +394,7 @@
             this.btnVanChuyen.ForeColor = System.Drawing.Color.White;
             this.btnVanChuyen.Image = ((System.Drawing.Image)(resources.GetObject("btnVanChuyen.Image")));
             this.btnVanChuyen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVanChuyen.Location = new System.Drawing.Point(3, 322);
+            this.btnVanChuyen.Location = new System.Drawing.Point(3, 320);
             this.btnVanChuyen.Name = "btnVanChuyen";
             this.btnVanChuyen.Size = new System.Drawing.Size(250, 59);
             this.btnVanChuyen.TabIndex = 8;
@@ -465,7 +485,7 @@
             this.btnKiemSoat.ForeColor = System.Drawing.Color.White;
             this.btnKiemSoat.Image = ((System.Drawing.Image)(resources.GetObject("btnKiemSoat.Image")));
             this.btnKiemSoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKiemSoat.Location = new System.Drawing.Point(3, 258);
+            this.btnKiemSoat.Location = new System.Drawing.Point(3, 256);
             this.btnKiemSoat.Name = "btnKiemSoat";
             this.btnKiemSoat.Size = new System.Drawing.Size(250, 59);
             this.btnKiemSoat.TabIndex = 4;
@@ -923,28 +943,8 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 7;
+            this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnHangTon
-            // 
-            this.btnHangTon.BackColor = System.Drawing.Color.Transparent;
-            this.btnHangTon.FlatAppearance.BorderSize = 0;
-            this.btnHangTon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnHangTon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHangTon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHangTon.ForeColor = System.Drawing.Color.White;
-            this.btnHangTon.Image = ((System.Drawing.Image)(resources.GetObject("btnHangTon.Image")));
-            this.btnHangTon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHangTon.Location = new System.Drawing.Point(0, 242);
-            this.btnHangTon.Name = "btnHangTon";
-            this.btnHangTon.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnHangTon.Size = new System.Drawing.Size(253, 40);
-            this.btnHangTon.TabIndex = 12;
-            this.btnHangTon.Text = "       QL Hàng Tồn";
-            this.btnHangTon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHangTon.UseVisualStyleBackColor = false;
-            this.btnHangTon.Click += new System.EventHandler(this.btnHangTon_Click);
             // 
             // MainForm
             // 

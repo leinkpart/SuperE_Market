@@ -179,6 +179,8 @@
             // 
             // dtgvGoodsList
             // 
+            this.dtgvGoodsList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvGoodsList.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dtgvGoodsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvGoodsList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgvGoodsList.Location = new System.Drawing.Point(0, 0);
@@ -385,7 +387,7 @@
             this.btnNew.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNew.ForeColor = System.Drawing.Color.White;
-            this.btnNew.Location = new System.Drawing.Point(3, 583);
+            this.btnNew.Location = new System.Drawing.Point(26, 576);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(91, 36);
             this.btnNew.TabIndex = 5;

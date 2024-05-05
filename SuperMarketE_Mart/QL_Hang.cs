@@ -68,7 +68,7 @@ namespace SuperMarketE_Mart
                     dtgvGoodsList.Columns[1].HeaderText = "Tên Sản Phẩm";
                     dtgvGoodsList.Columns[2].HeaderText = "Số Lượng";
                     dtgvGoodsList.Columns[3].HeaderText = "Ngày Sản Xuất";
-                    dtgvGoodsList.Columns[4].HeaderText = "Danh Mục Sản Phẩm";
+                    dtgvGoodsList.Columns[4].HeaderText = "Danh Mục";
                     dtgvGoodsList.Columns[5].HeaderText = "Nhà Sản Xuất";
                     dtgvGoodsList.Columns[6].HeaderText = "Giá Nhập Vào";                   
                     dtgvGoodsList.Columns[7].HeaderText = "Giá Bán Ra";
@@ -264,7 +264,6 @@ namespace SuperMarketE_Mart
                     if (conn.State == ConnectionState.Closed)
                         conn.Open();
 
-                    //string DeleteGoods = "DELETE FROM Products WHERE IdSanPham = '" + txtIDSP.Text + "'";
 
                     SqlCommand command = new SqlCommand("DeleteGoods", conn);
                     command.CommandType = CommandType.StoredProcedure;

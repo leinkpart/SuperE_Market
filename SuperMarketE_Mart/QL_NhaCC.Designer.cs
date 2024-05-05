@@ -30,13 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QL_NhaCC));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbG_Categorry = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtSupplyGoods = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPhoneNumb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,13 +57,9 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cbG_Categorry);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.btnReset);
             this.panel1.Controls.Add(this.btnSearch);
             this.panel1.Controls.Add(this.txtSearch);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.txtSupplyGoods);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.txtPhoneNumb);
             this.panel1.Controls.Add(this.label3);
@@ -81,34 +73,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1204, 173);
             this.panel1.TabIndex = 0;
-            // 
-            // cbG_Categorry
-            // 
-            this.cbG_Categorry.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbG_Categorry.FormattingEnabled = true;
-            this.cbG_Categorry.Items.AddRange(new object[] {
-            "Áo",
-            "Giày",
-            "Túi",
-            "Kính",
-            "Quần",
-            "Mỹ Phẩm",
-            "Ví (Bóp)"});
-            this.cbG_Categorry.Location = new System.Drawing.Point(565, 124);
-            this.cbG_Categorry.Name = "cbG_Categorry";
-            this.cbG_Categorry.Size = new System.Drawing.Size(224, 28);
-            this.cbG_Categorry.TabIndex = 15;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.label6.Location = new System.Drawing.Point(415, 130);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 18);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Goods Category";
             // 
             // btnReset
             // 
@@ -154,26 +118,6 @@
             this.txtSearch.Enter += new System.EventHandler(this.txtSearch_Enter);
             this.txtSearch.Leave += new System.EventHandler(this.txtSearch_Leave);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.label5.Location = new System.Drawing.Point(415, 78);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(114, 18);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Supply Goods";
-            // 
-            // txtSupplyGoods
-            // 
-            this.txtSupplyGoods.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupplyGoods.Location = new System.Drawing.Point(565, 74);
-            this.txtSupplyGoods.Multiline = true;
-            this.txtSupplyGoods.Name = "txtSupplyGoods";
-            this.txtSupplyGoods.Size = new System.Drawing.Size(224, 30);
-            this.txtSupplyGoods.TabIndex = 8;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -199,7 +143,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.label3.Location = new System.Drawing.Point(7, 130);
+            this.label3.Location = new System.Drawing.Point(420, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 18);
             this.label3.TabIndex = 5;
@@ -208,7 +152,7 @@
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(151, 124);
+            this.txtAddress.Location = new System.Drawing.Point(565, 93);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(224, 30);
@@ -219,7 +163,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.label2.Location = new System.Drawing.Point(7, 78);
+            this.label2.Location = new System.Drawing.Point(7, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 18);
             this.label2.TabIndex = 3;
@@ -228,7 +172,7 @@
             // txtSupplierName
             // 
             this.txtSupplierName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSupplierName.Location = new System.Drawing.Point(151, 74);
+            this.txtSupplierName.Location = new System.Drawing.Point(151, 93);
             this.txtSupplierName.Multiline = true;
             this.txtSupplierName.Name = "txtSupplierName";
             this.txtSupplierName.Size = new System.Drawing.Size(224, 30);
@@ -256,8 +200,11 @@
             // 
             // dtgvSupplier
             // 
+            this.dtgvSupplier.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvSupplier.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dtgvSupplier.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvSupplier.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgvSupplier.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dtgvSupplier.Location = new System.Drawing.Point(0, 0);
             this.dtgvSupplier.Name = "dtgvSupplier";
             this.dtgvSupplier.RowHeadersWidth = 51;
@@ -384,8 +331,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtSupplyGoods;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtPhoneNumb;
         private System.Windows.Forms.Label label3;
@@ -399,7 +344,5 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cbG_Categorry;
     }
 }

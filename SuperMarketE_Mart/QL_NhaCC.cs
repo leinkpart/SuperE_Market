@@ -78,8 +78,7 @@ namespace SuperMarketE_Mart
                     dtgvSupplier.Columns[1].HeaderText = "Supplier Name";
                     dtgvSupplier.Columns[2].HeaderText = "Address";
                     dtgvSupplier.Columns[3].HeaderText = "Phone Number";
-                    dtgvSupplier.Columns[4].HeaderText = "Provide Goods";
-                    dtgvSupplier.Columns[5].HeaderText = "Category Goods";
+                    
 
                     if (connection.State == ConnectionState.Open)
                         connection.Close();
@@ -93,7 +92,7 @@ namespace SuperMarketE_Mart
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (txtSupplierID.Text == "" && txtSupplierName.Text == "" && txtAddress.Text == "" && txtPhoneNumb.Text == "" && txtSupplyGoods.Text == "")
+            if (txtSupplierID.Text == "" && txtSupplierName.Text == "" && txtAddress.Text == "" && txtPhoneNumb.Text == "" )
             {
                 MessageBox.Show("Please enter Information follow the Fields.", "Information", MessageBoxButtons.OK);
                 txtSupplierID.Focus();
@@ -129,11 +128,7 @@ namespace SuperMarketE_Mart
                 return;
             }
 
-            if (txtSupplyGoods.Text == "")
-            {
-                MessageBox.Show("Supply Goods has no Information yet!!", "Information", MessageBoxButtons.OK);
-                txtSupplyGoods.Focus();
-            }
+            
 
             try
             {
@@ -150,8 +145,7 @@ namespace SuperMarketE_Mart
                     command.Parameters.AddWithValue("@TenNCC", txtSupplierName.Text);
                     command.Parameters.AddWithValue("@DiaChi", txtAddress.Text);
                     command.Parameters.AddWithValue("@DienThoai", txtPhoneNumb.Text);
-                    command.Parameters.AddWithValue("@HangCungCap", txtSupplyGoods.Text);
-                    command.Parameters.AddWithValue("@DanhMucSP", cbG_Categorry.SelectedItem);
+                    
                     command.ExecuteNonQuery();
 
                     if (conn.State == ConnectionState.Open)
@@ -174,7 +168,7 @@ namespace SuperMarketE_Mart
         {
             try
             {
-                if (txtSupplierID.Text == "" && txtSupplierName.Text == "" && txtAddress.Text == "" && txtPhoneNumb.Text == "" && txtSupplyGoods.Text == "")
+                if (txtSupplierID.Text == "" && txtSupplierName.Text == "" && txtAddress.Text == "" && txtPhoneNumb.Text == "" )
                 {
                     MessageBox.Show("Please choose one data to Edit", "Information", MessageBoxButtons.OK);
                     return;
@@ -185,7 +179,7 @@ namespace SuperMarketE_Mart
                     if (conn.State == ConnectionState.Closed)
                         conn.Open();
 
-                    string EditSupplier = "UPDATE TB_NhaCungCap SET IdNCC = @IdNCC , TenNCC = @TenNCC , DiaChi = @DiaChi , DienThoai = @DienThoai , HangCungCap = @HangCungCap , DanhMucSP = @DanhMucSP WHERE IdNCC = @IdNCC";
+                    string EditSupplier = "UPDATE TB_NhaCungCap SET IdNCC = @IdNCC , TenNCC = @TenNCC , DiaChi = @DiaChi , DienThoai = @DienThoai WHERE IdNCC = @IdNCC";
 
                     SqlCommand command = new SqlCommand(EditSupplier, conn);
 
@@ -193,9 +187,7 @@ namespace SuperMarketE_Mart
                     command.Parameters.AddWithValue("@TenNCC", txtSupplierName.Text);
                     command.Parameters.AddWithValue("@DiaChi", txtAddress.Text);
                     command.Parameters.AddWithValue("@DienThoai", txtPhoneNumb.Text);
-                    command.Parameters.AddWithValue("@HangCungCap", txtSupplyGoods.Text);
-                    command.Parameters.AddWithValue("@DanhMucSP", cbG_Categorry.SelectedItem);
-
+                    
                     command.ExecuteNonQuery();
 
                     if (conn.State == ConnectionState.Open)
@@ -218,7 +210,7 @@ namespace SuperMarketE_Mart
         {
             try
             {
-                if (txtSupplierID.Text == "" && txtSupplierName.Text == "" && txtAddress.Text == "" && txtPhoneNumb.Text == "" && txtSupplyGoods.Text == "")
+                if (txtSupplierID.Text == "" && txtSupplierName.Text == "" && txtAddress.Text == "" && txtPhoneNumb.Text == "" )
                 {
                     MessageBox.Show("Please choose one data to Delete", "Information", MessageBoxButtons.OK);
                     return;
@@ -262,8 +254,6 @@ namespace SuperMarketE_Mart
                 txtSupplierName.Text = dataGridView.Cells["TenNCC"].Value.ToString();
                 txtAddress.Text = dataGridView.Cells["DiaChi"].Value.ToString();
                 txtPhoneNumb.Text = dataGridView.Cells["DienThoai"].Value.ToString();
-                txtSupplyGoods.Text = dataGridView.Cells["HangCungCap"].Value.ToString();
-                cbG_Categorry.Text = dataGridView.Cells["DanhMucSP"].Value.ToString();
             }
             btnAdd.Enabled = false;
         }
@@ -294,8 +284,6 @@ namespace SuperMarketE_Mart
             txtSupplierName.Text = string.Empty;
             txtAddress.Text = string.Empty;
             txtPhoneNumb.Text = string.Empty;
-            txtSupplyGoods.Text = string.Empty;
-            cbG_Categorry.Text = string.Empty;
 
             btnAdd.Enabled = true;
         }
